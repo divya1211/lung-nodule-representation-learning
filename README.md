@@ -30,6 +30,7 @@
 - [ ] Use more `Conv`, `DeConv`  layers. Used a smaller `fc` layer. 
 - [ ] Use only the re-construction loss on images for debugging.
 - [ ] Use small pre-trained models instead of `Conv`.
+- [ ] Batchify the code for batchsize > 1 as stochastic gradient descent isn't happening.
 
 
 
