@@ -1,0 +1,37 @@
+## Lung Nodule Representation Learning
+
+
+### Learnings and thoughts
+
+- The network is producing noise as output images.
+- How to improve recontruction loss? Read literature. 
+
+
+### Things done 
+
+- [x] Converted data to 2D images wihtout mask
+    - `180x180 px` 
+    - Centered cropped on nodule
+- [x] Dataloader for 2D lungs scans
+- [x] Visualization for a single 2D lung scan
+- [x] PyTorch model
+    - Tilled `nxn` scan `I` into `mxm` blocks. Eg, `180x180` into 9 `60x60` blocks.
+    - Used `Conv2D` as  _f_ to downsample blocks to `x_1, x_2, .., x_9`.
+    - Use `X_\i` to predict `x_i`, where `x_pred_i` is the prediction.
+      - Where `X_\i` is average pool of `x_1, x_2, ... x_i-1, x_i+1, ... x_n`.
+    - `ConvTranspose2d` to upsample each `x_pred_i` to `I_pred_i`.
+    - Combined all the predicted images blockes `I_pred_i` to `I_pred`
+- [x] Loss function used is MSE Loss on `I_pred` and `I`.
+
+
+### Things to-do
+
+- [ ] Overfit a small batch of examples ~10 images. [Source](http://karpathy.github.io/2019/04/25/recipe/)
+- [ ] Use more `Conv`, `DeConv`  layers. Used a smaller `fc` layer. 
+- [ ] Use only the re-construction loss on images for debugging.
+- [ ] Use small pre-trained models instead of `Conv`.
+- [ ] Try on zero input data.
+
+
+
+
