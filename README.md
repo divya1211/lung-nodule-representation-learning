@@ -5,7 +5,7 @@
 
 - The network is producing noise as output images.
 - How to improve recontruction loss? Read literature. 
-- Overfits for a single image using reconstruction loss.
+- Overfits for a single image using reconstruction loss and masked loss.
 
 ### Things done 
 
