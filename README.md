@@ -23,14 +23,14 @@
     - Combined all the predicted images blockes `I_pred_i` to `I_pred`
 - [x] Loss function used is MSE Loss on `I_pred` and `I`.
 - [x] Overfit a small batch of examples ~10 images. [Source](http://karpathy.github.io/2019/04/25/recipe/)
-
+- [x] Try on zero input data.
 
 ### Things to-do
 
 - [ ] Use more `Conv`, `DeConv`  layers. Used a smaller `fc` layer. 
 - [ ] Use only the re-construction loss on images for debugging.
 - [ ] Use small pre-trained models instead of `Conv`.
-- [ ] Try on zero input data.
+
 
 
 
