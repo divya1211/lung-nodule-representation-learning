@@ -24,15 +24,19 @@
 - [x] Loss function used is MSE Loss on `I_pred` and `I`.
 - [x] Overfit a small batch of examples ~10 images. [Source](http://karpathy.github.io/2019/04/25/recipe/)
 - [x] Try on zero input data.
+- [x] Use more `Conv`, `DeConv`  layers. Used a smaller `fc` layer. 
+
+
+### Rejected Ideas
+
+- [x] Use small pre-trained models instead of `Conv`.
 
 ### Things to-do
 
-- [ ] Use more `Conv`, `DeConv`  layers. Used a smaller `fc` layer. 
 - [ ] Use only the re-construction loss on images for debugging.
-- [ ] Use small pre-trained models instead of `Conv`.
 - [ ] Batchify the code for batchsize > 1 as stochastic gradient descent isn't happening.
-
-
+- [ ] Use BatchNorm 
+- [ ] Run on MNIST
 
 
 
