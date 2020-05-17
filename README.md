@@ -36,8 +36,8 @@
 
 ### Things to-do
 
-
-
+- [ ] Explore different loss functions
+- [ ] Plot distribution of the differences in v space
 - [ ] Use BatchNorm 
 
 
