@@ -39,6 +39,8 @@
 - [ ] Explore different loss functions
 - [ ] Plot distribution of the differences in v space
 - [ ] Use BatchNorm 
+- [ ] readme results write it down
+- [ ] How do we check overfitting
 
 
 
