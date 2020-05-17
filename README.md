@@ -25,18 +25,21 @@
 - [x] Overfit a small batch of examples ~10 images. [Source](http://karpathy.github.io/2019/04/25/recipe/)
 - [x] Try on zero input data.
 - [x] Use more `Conv`, `DeConv`  layers. Used a smaller `fc` layer. 
+- [x] Batchify the code for batchsize > 1 as stochastic gradient descent isn't happening.
+- [x] Use only the re-construction loss on images for debugging.
 
 
 ### Rejected Ideas
 
 - [x] Use small pre-trained models instead of `Conv`.
+- [x] Run on MNIST
 
 ### Things to-do
 
-- [ ] Use only the re-construction loss on images for debugging.
-- [ ] Batchify the code for batchsize > 1 as stochastic gradient descent isn't happening.
+
+
 - [ ] Use BatchNorm 
-- [ ] Run on MNIST
+
 
 
 
